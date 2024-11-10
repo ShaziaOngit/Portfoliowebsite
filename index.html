@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Layout of the page */
+        .container {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+            padding-left: 10px;
+            transition: 0.3s;
+        }
+
+        /* Main content area styling */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #1abc9c;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+        }
+
+        .header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #1abc9c;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .main-content {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .header nav a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="displaypic.png" alt="Profile Picture">
+            <h2>Shazia Mohtashim</h2>
+            <a href="#career">Career</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#location">Location</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Header -->
+            <div class="header">
+                <h1>Portfolio</h1>
+                <nav>
+                    <a href="#career">Career</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#location">Location</a>
+                </nav>
+            </div>
+
+            <!-- Career Section -->
+            <div id="career" class="section">
+                <h2>Career</h2>
+                <p>Write a brief overview of your career journey here. You can describe your current role, past jobs, or any notable achievements in your professional career.</p>
+            </div>
+
+            <!-- About Us Section -->
+            <div id="about" class="section">
+                <h2>About Us</h2>
+                <p>This is a short description about yourself. Talk about your background, skills, and what motivates you. Keep it concise and to the point!</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="section">
+                <h2>Contact</h2>
+                <p>For inquiries, please email me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            </div>
+
+            <!-- Location Section -->
+            <div id="location" class="section">
+                <h2>Location</h2>
+                <p>Let your visitors know where you're based, or a general area of operation if you work remotely. Example: "Based in New York, USA"</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
